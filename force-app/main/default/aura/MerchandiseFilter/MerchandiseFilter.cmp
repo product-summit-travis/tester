@@ -1,0 +1,29 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    
+    <aura:attribute name="showSearch" type="Boolean" default="true"/>
+    <aura:attribute name="showCategory" type="Boolean" default="true"/>
+    <aura:attribute name="showSubcategory" type="Boolean" default="true"/>
+    
+    <aura:registerEvent name="filterChange" type="c:MerchandiseFilterChange"/>
+    
+    <lightning:card title="Merchandise Filters" iconName="custom:custom39">
+    
+        <lightning:accordion>
+            <lightning:accordionSection label="Name">
+                <c:SearchBar onchange="{!c.searchKeyChangeHandler}"/>
+            </lightning:accordionSection>
+
+            <lightning:accordionSection label="Category">
+                <c:CategorySelector onchange="{!c.categoryChangeHandler}"/>
+                <c:SubcategorySelector />
+            </lightning:accordionSection>
+
+            <lightning:accordionSection label="Price">
+                <c:Range onchange="{!c.rangeChangeHandler}"/>
+            </lightning:accordionSection>
+    
+        </lightning:accordion>
+
+    </lightning:card>
+    
+</aura:component>

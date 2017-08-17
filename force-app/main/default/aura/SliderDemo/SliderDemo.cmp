@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+
+    <aura:attribute name="myval" default="10" type="Integer"/>
+    <lightning:slider step="10" value="{!v.myval}" onchange="{! c.handleRangeChange }"/>
+
+</aura:component>	

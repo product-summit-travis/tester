@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+
+    <lightning:progressIndicator type="path" currentStep="step2">
+        <lightning:progressStep label="Step One" value="step1"/>
+        <lightning:progressStep label="Step Two" value="step2"/>
+        <lightning:progressStep label="Step Three" value="step3"/>
+    </lightning:progressIndicator>
+
+</aura:component>

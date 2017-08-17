@@ -1,0 +1,22 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+
+    <lightning:card title="Filters">
+
+        <lightning:accordion>
+            <lightning:accordionSection label="Name">
+                        abc
+            </lightning:accordionSection>
+
+
+            <lightning:accordionSection label="Category">
+                def
+            </lightning:accordionSection>
+
+            <lightning:accordionSection label="Price">
+                    def
+                </lightning:accordionSection>
+            </lightning:accordion>
+
+    </lightning:card>
+
+</aura:component>	

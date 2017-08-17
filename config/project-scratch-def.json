@@ -1,0 +1,8 @@
+{
+    "orgName": "ccoenraets Company",
+    "template": "0TTB0000000IRSB",
+    "hasSampleData": true,
+    "orgPreferences" : {
+        "enabled": ["S1DesktopEnabled"]
+    }
+}
