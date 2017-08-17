@@ -1,1 +1,3 @@
-404: Not Found
+public class EinsteinLanguage_Controller {
+
+}
